@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onmouseover ="mouseover()" onmouseout="mouseout() " id ="demo"> Mi click vô đây hắn ra màu đỏ cho mà coi</p>
+    <script>
+        var demo2 = document.getElementById("demo2");
+        demo2.addEventListener("mouseover", mouseover);
+        demo2.addEventListener("mouseout", mouseout);
+        
+        function mouseover(){
+        document.getElementById("demo").style.color="red";   
+        }
+        function mouseout(){
+        document.getElementById("demo").style.color="black";
+        }
+    </script>
+    <p id=" demo2"> Hãy xem ta đây </p>
+    <script>
+        var demo2 = document.getElementById("demo2");
+        demo2.addEventListener("mouseover", mouseover);
+        demo2.addEventListener("mouseout", mouseout);
+
+        
+    </script>
+</body>
+</html>

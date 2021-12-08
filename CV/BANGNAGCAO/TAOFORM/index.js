@@ -1,0 +1,5 @@
+function
+// comment
+/*
+comment dài
+/*
