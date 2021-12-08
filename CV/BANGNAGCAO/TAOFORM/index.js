@@ -1,5 +1,0 @@
-function
-// comment
-/*
-comment dài
-/*
