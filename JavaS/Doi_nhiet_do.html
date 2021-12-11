@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <table width="50%">
+            <tr>
+                <td>
+                    <label> Amount</label> <br>
+                    <input type="text" id="nhapvalue">
+                </td>
+                <td>
+                    From Currency <br>
+                    <select name="" id="From">
+                        <option value="VietNam" name="Country"> VND</option>
+                        <option value="USA" name="Country">USD</option>
+                        <option value="Janpan" name="Country">JPS</option>
+                    </select>
+
+                </td>
+                <td>
+                    To Currency <br>
+                    <select name="" id="To">
+                        <option value="VietNam" name="Country"> VND</option>
+                        <option value="USA" name="Country">USD</option>
+                        <option value="Janpan" name="Country">JPS</option>
+                    </select>
+                </td>
+                <td>
+                    <button id="Convert" onclick="hien()">onvert</button>
+                </td>
+            </tr>
+            <tr>
+                <td id="result">result </td>
+            </tr>
+        </table>
+    
+</body>
+<script>
+    /*function Convert();
+        let a=Number(prompt("To"));
+        let b=Number
+        */
+    function hien() {
+        let a = document.getElementById('nhapvalue').value
+        document.getElementById('result').innerText = 'result:' + a/23000
+        
+    }
+</script>
+</html>

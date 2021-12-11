@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="(2)"> 
+                <input type="text" id="nhap 1">
+            </td>
+            <td colspan="2">
+                <input type="text" id="nhap 2">
+            </td>
+        </tr>
+    </table>
+    <table 
+        <tr>
+            <td>
+                <button id="Addition(+)" onclick="hienTong()"> Addition (+)</button>
+            </td>
+            <td>
+                <button id="Subtraction (-)" onclick="hienTru()"> Subtraction (-)</button>
+            </td>
+            <td>
+                <button id="Miltiplicaion (X)" onclick="hienNhan()"> Multiplicaion (X)</button>
+            </td>
+            <td>
+                <button id="Division (/)" onclick="hienChia()"> Division (/)</button>
+            </td> <br>
+        </tr>
+        <tr id="result"></tr>
+    </table>
+    <script>
+        function hienTong(){
+            let a = Number(document.getElementById('nhap 1').value);
+            let b = Number(document.getElementById('nhap 2').value);
+            document.getElementById('result').innerText = 'result:' + (a + b);
+        }
+        function hienTru(){
+            let a = document.getElementById('nhap 1').value;
+            let b = document.getElementById('nhap 2').value;
+            document.getElementById('result').innerText = 'result:' + (a - b);
+        }
+        function hienNhan(){
+            let a = document.getElementById('nhap 1').value;
+            let b = document.getElementById('nhap 2').value;
+            document.getElementById('result').innerText = 'result::' + (a * b);
+        }
+        function hienChia(){
+            let a = document.getElementById('nhap 1').value;
+            let b = document.getElementById('nhap 2').value;
+            document.getElementById('result').innerText = 'result' + (a / b);
+        }
+    </script>
+</body>
+</html> 
