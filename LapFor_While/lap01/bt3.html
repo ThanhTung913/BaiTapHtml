@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//       let a=[1,2,3,4,5,6,7,8,9,2];
+//       let i;
+//     //   for(i=0; i<a.length ; i++){
+//     //     console.log(a[i])  
+//     // }
+//    for (var i in a ) {
+//        console.log(a[i++])
+//    }
+
+// Bai 3 và 5: 20 số đầu tiên trong dãy fib và tính tổng.
+// let f1=1;
+// let f2=1;
+// let fn=1;
+// let count;
+//  let total=0;
+// for (count=0; count <= 19; count++){
+//     f1=f2;
+//     f2=fn;
+//     fn=f1+f2;
+//     console.log(f2);
+//     total += f2;
+// }  console.log(total)
+
+// bai 4: Số đầu tiên trong dãy fib chia hết cho 5
+// let f1=1;
+// let f2=1;
+// let fn=1;
+// let count;
+
+// for (count=0; count <= 19; count++){
+//     f1=f2;
+//     f2=fn;
+//     fn=f1+f2;
+//     if (f2 %5 == 0){
+//         console.log(f2)
+//         break;
+//     }
+// }
+
+
+// bài 6: Tổng 30 số đầu tiên chia hết cho 7
+// let number;
+// let count = 0;
+// let total=0;
+
+// for (number = 0; count <= 30  ; number++){
+//         if (number % 7 == 0){
+//             count++
+//             total += number;
+//         } 
+// } console.log(total)
+
+
+// bài 7: in dãy số từ 1 - 100 số nào chia hết cho 3 thì fizz chia hết cho 5 thì buzz, chia hết cho cả 3 và 5 thì Fizzbuzz
+    for (var i = 1; i <= 100; i++) {
+  if (i % 3 == 0) { 
+    console.log('Fizz'); 
+  }
+  
+  if (i % 5 == 0) { 
+    console.log('Buzz'); 
+  }
+
+  if ((i % 3 == 0) && (i % 5 == 0)) {
+    console.log('FizzBuzz'); 
+  }
+  if ((i % 3 != 0) && (i % 5 != 0)) { 
+    console.log(i); 
+    }
+}
+
+// bai 8: Trò chơi "Chơi hoặc chơi lại"
+
+
+</script>
+</body>
+</html>
+

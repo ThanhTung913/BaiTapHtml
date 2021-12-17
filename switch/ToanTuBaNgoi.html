@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Bai 1:
+        // let a =prompt("a: ");
+        // let b =prompt("b: ");
+
+        // console.log(result = (a + b < 4) ? 'Bellow' : 'over' );
+        
+
+        // Bai 2:
+        // let message;
+        // if (login == 'employee') {
+        //    console.log(message = 'Hello') ;
+        // } else if (login == 'Director') {
+        //     console.log(message = 'Greeting');
+        // } else if (login == "") {
+        //     console.log(message == 'No login');
+        // }
+        // else {
+        //     console.log(message = " ");
+        // }
+        let message = (login == 'Employee') ?
+    'Hello' :
+    (login == 'Director') ?
+      'Greetings' :
+      (login == '') ?
+        'No login' :
+        '';
+
+        let message = (login == 'Employee') ? 'hello' : (login='Director') ? 'Greetings' : (login = '') ? 'No login' : '';
+        alert(message);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+function tinhsongay();
+get thang
