@@ -8,6 +8,7 @@
 </head>
 <body>
     <script>
+        // Câu 1: Điểm trung bình
         var a = Number(prompt('Nhập điểm vật lý'));
         var b = Number(prompt('Nhập điểm Hóa học'));
         var c = Number(prompt('Nhập điểm sinh học'));
@@ -15,6 +16,20 @@
         var y = a + b + c;
         document.write('Điểm trung bình' + average );
         document.write(' Tổng điểm' + y );
+        
+        // Câu 2: Đổi Độ C sang độ F
+        let a = Number(prompt('nhập độ C'));
+        let F = (9 * a) +5 /32 ;
+            document.write('Độ F là: ' + F);
+
+        // Câu 3: Diện tích hình tròn và chu vi hình tròn
+        const P=3.14;
+        let R = Number(prompt("nhập bán kính hình tròn"))
+        let S = R*R*P;
+        let C= 2*R*P;
+        alert('Diện tích hình tròn là: ' + S)
+        alert('chu vi hình tròn là: ' + C);
+
     </script>
 </body>
 </html>
