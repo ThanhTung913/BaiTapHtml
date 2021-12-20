@@ -10,30 +10,136 @@
 </body>
 <script>
     // Câu 1.
-let p= Number(prompt('Nhập n'))
-let numbers = [];
-let i;
-let j;
-let y;
-let max=90;
-let min=10;
-let SoChan=0;
-let count = 0;
+// let p= Number(prompt('Nhập n'))
+// let numbers = [];
+// let i;
+// let j;
+// let y;
+// let max=90;
+// let min=10;
+// let SoChan=0;
+// let count = 0;
 
  
- for (let i = 0; i <= p; i++){   // Lặp theo hàng
-     numbers[i] = [];
-     for (let j = 0; j <= p; j++){  // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
-         numbers[i][j] = Math.floor((Math.random() * (max - min +1 ) + min)); 
-     }
- }  
-console.log(numbers);
+//  for (let i = 0; i <= p; i++){   // Lặp theo hàng
+//      numbers[i] = [];
+//      for (let j = 0; j <= p; j++){  // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
+//          numbers[i][j] = Math.floor((Math.random() * (max - min +1 ) + min)); 
+//      }
+//  }  
+// console.log(numbers);
 
-for (y = 0; count <=numbers.length ; y++){
-    if ()
-    SoChan += numbers[i]
-    count++
-    
-} console
-</script>
-</html>
+// for (y = 0; y <=numbers.length ; y++){
+//     if (numbers[i] % 2 == 0){
+//         console.log(numbers[i]
+//         SoChan += numbers[i][j];
+//     }
+//     console.log(SoChan)
+// } 
+// </script>
+
+<!-- Bai 1 -->
+    <!-- <script>
+        let min = 10;
+        let max = 90;
+        let lengthArray = 5;
+        let arr = [];
+        let total = 0;
+        let total1 = 0;
+        let total2 = 0;
+        let total3 = 0;
+        let total4 = 0;
+        for (let i = 0; i < lengthArray; i++) {
+            arr[i] = [];
+            for (let j = 0; j < lengthArray; j++) {
+                arr[i][j] = Math.floor(Math.random() * (max - min + 1) + min);
+            }
+        }
+        // for (let i = 0; i < lengthArray; i++) {
+        //     for (let j = 0; j < lengthArray; j++) {
+        //         if (arr[i][j] % 2 == 0) {
+        //             total += arr[i][j];
+        //         }
+        //     }
+        // }
+        // for (let i = 0; i < lengthArray; i++) {
+        //     total1 += arr[i][i];
+        // }
+        // for (let i = lengthArray - 1, j = 0; i > 0, j < lengthArray; i--, j++) {
+        //     total2 += arr[j][i];
+        // }
+        for (let j = 0; j < lengthArray; j += 4) {
+            for (let i = 0; i < lengthArray; i++) {
+                total3 += arr[i][j];
+            }
+        }
+        for (let j = 1; j < lengthArray - 1; j++) {
+            for (let i = 0; i < lengthArray; i += 4) {
+                total4 += arr[i][j];
+            }
+        }
+        for (let i = 0; i < lengthArray; i++) {
+            for (let j = 0; j <= i; j++) {
+                document.write(arr[i][j])
+            }
+            document.write('<br>')
+        }
+        for (let i = lengthArray - 1; i >= 0; i--) {
+            for (let j = 0; j <= i; j++) {
+                document.write(arr[i][j])
+            }
+            document.write('<br>')
+        }
+        console.log(arr);
+        // console.log(total);
+        // console.log(total1);
+        // console.log(total2);
+        console.log(total3 + total4);
+    </script> -->
+    <!-- Bai 2 -->
+    <!-- <script>
+        let min = 10;
+        let max = 40;
+        let arr1 = [];
+        let arr2 = [];
+        let arrLength = 5;
+        let total1 = 1;
+        let total2 = 1;
+        for (let i = 0; i < arrLength; i++) {
+            arr1[i] = [];
+            for (let j = 0; j < arrLength; j++) {
+                arr1[i][j] = Math.floor(Math.random() * (max - min + 1) + min);
+                total1 *= arr1[i][j];
+            }
+        }
+        for (let i = 0; i < arrLength; i++) {
+            arr2[i] = [];
+            for (let j = 0; j < arrLength; j++) {
+                arr2[i][j] = Math.floor(Math.random() * (max - min + 1) + min);
+                total2 *= arr2[i][j]
+            }
+        }
+        console.log(arr1)
+        console.log(arr2)
+        console.log(total2 * total1)
+    </script> -->
+    <!-- Bai 3  -->
+    <script>
+        let min = 20;
+        let max = 60;
+        let arr = [];
+        let arrLength = 3;
+        let arrHeigh = 4;
+        let numbers
+        for (let i = 0; i < arrLength; i++) {
+            arr[i] = [];
+            for (let j = 0; j < arrHeigh; j++) {
+                numbers = Math.floor(Math.random() * (max - min + 1) + min);
+                if (numbers % 5 == 0) {
+                    arr[i].push(numbers)
+                }
+            }
+        }
+        console.log(arr)
+    </script>
+</html>s
