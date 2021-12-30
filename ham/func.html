@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let size = 10;
+        // let min =1;
+        // let max = 10;
+        let arr=[];
+        // function createArray(size,min,max){
+        function createArray(size,min = 1,max = 10 ){
+            for (let i = 1; i < size ;i++ ) {
+                arr[i] = Math.floor(Math.random() *(max - min +1 )+ min);
+            }
+            // console.log(arr)
+            // document.write(arr)
+            return arr;
+        } 
+        // createArray(10)
+        // createArray(20)
+        console.log(createArray(20,50,70))
+        document.write(createArray(20,50,70))
+        
+        let arr = createArray(10,20,50)
+        console.log(arr)
+        
+
+    </script>
+</body>
+</html>
+
+<div>
+    IIFE = Thực thi ngay lập tức ()
+    <script>
+        function sum(){
+            return 5+ 7;
+        }
+        console.log(sum())
+
+        // (): ném vào cái gì thì trả lại cái đó ex: 
+        (function tota(){
+            console.log( 5+7)
+        })();
+
+        // []: option: lựa chon, có cũng được k có cũng được
+
+    </script>
+
+
+hoisting: Nếu k dùng từ khóa dể khai báo biến thì mặc định là var
+Strict mode: "use stric"
+</div>

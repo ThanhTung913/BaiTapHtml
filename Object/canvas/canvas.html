@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200px" height="200px" >
+
+    </canvas>
+    <script>
+        let art = document.getElementById('myCanvas');
+        let artCV = art.getContext("2d")
+        // artCV.moveTo(0,0)
+        // artCV.lineTo(200,200)
+        // artCV.stroke();
+
+        // vẽ đường thẳng
+
+        artCV.beginPath()
+        artCV.arc(90,20,40,2*Math.PI)
+        artCV.stroke();
+
+    </script>
+</body>
+</html>

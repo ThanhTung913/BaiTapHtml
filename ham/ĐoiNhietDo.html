@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p> Type a value in the Fahrenheit field to converter the value to Celcius:</p>
+    Fahrenheit <input type="number" id="nhapF" onchange="doiNhiet" >
+    <p id="Celcius">Celcius:</p>
+</body>
+<script>
+    function doiNhiet(hien){
+        hien =parseFloat(nhapF)
+        document.getElementById(Celcius).innerHTML= (nhapF-32)/1.8;
+    }
+</script>
+</html>

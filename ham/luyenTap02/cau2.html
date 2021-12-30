@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr> Cái này dùng để tính diện tích</tr> <br> <br>
+        <tr> 
+             <label> <input type="text" id="nhapR"></label>
+        </tr> <br>
+        <tr> 
+            <label> <input type="button" value="Xác nhận" onclick="dienTich()" ></label>
+        </tr> <br>
+        <tr>
+            <label id="result1"> Result</label>
+        </tr>
+        
+    </table> <br> <hr>
+    <table>
+        <tr> Cái này dùng để tính chu vi</tr> <br> <br>
+        <tr> 
+             <label> <input type="text" id="nhapR1"></label>
+        </tr> <br>
+        <tr> 
+            <label> <input type="button" value="Xác nhận" onclick="chuVi()"></label>
+        </tr> <br>
+        <tr>
+            <label id="result2"> Result</label>
+        </tr><br>
+        
+    </table> 
+    
+</body>
+<script>
+    const Pi=3.14;
+    function dienTich(){
+        let R= document.getElementById('nhapR').value;
+        let S = R*R*Pi
+        document.getElementById('result1').innerText = `Result: ${S}`
+    }
+    function chuVi(){
+        let R= document.getElementById('nhapR1').value;
+        let C = 2*R*Pi
+        document.getElementById('result2').innerText = `Result: ${C}`
+    }
+</script>
+</html>

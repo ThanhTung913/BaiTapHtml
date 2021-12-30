@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Nhập số thứ nhất: <input type="number" id="nhapa"> <br>
+   Nhập số thứ hai: <input type="number" id="nhapb"> <br>
+   Nhập số thứ ba: <input type="number" id="nhapc"> <br>
+   <input type="button" value="kiểm tra" onclick="soNhoNhat()"> <br>
+   <label id="result"> Kết quả</label>
+</body>
+<script>
+    function soNhoNhat(){
+        let a = Number(document.getElementById('nhapa').value)
+        let b = Number(document.getElementById('nhapb').value)
+        let c = Number(document.getElementById('nhapc').value)
+        // let min = a;
+        // if (b < a && b < c){
+        //     document.getElementById('result').innerText = " b nhỏ nhất"
+        // } else if (c < a) {
+        //     document.getElementById('result').innerText = " c nhỏ nhất"
+        // } else {
+        //     document.getElementById('result').innerText = " a nhỏ nhất"
+        // }
+        b < a && b < c ? alert('b nhỏ nhất') : ( c < a ? alert('c nhỏ nhất') : "a nhỏ nhất")
+    } 
+</script>
+</html>

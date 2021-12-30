@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nhapa">
+    <input type="button" value="xác nhận" onclick="tinhSao()">
+    <label id="result"> Result: </label>
+</body>
+<script>
+    let ngoiSao=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let chomSao=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+    
+function tinhSao(){
+    let tim = document.getElementById('nhapa').value 
+    console.log('á')
+    for (let i = 0; i < ngoiSao.length; i++){
+        if (tim === ngoiSao[i]){
+            alert(`Ngôi Sao  ${ngoiSao[i]}  la thuộc chòm sao  ${chomSao[i]} `)
+            break;
+        }
+    }
+    
+} 
+</script>
+</html>

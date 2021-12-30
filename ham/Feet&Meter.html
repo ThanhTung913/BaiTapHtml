@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 300; height: 100;">
+        <tr>Chuyển đổi Feet sang Meter</tr>
+        <tr></tr>
+        <tr> 
+            <td> 
+                <label> <input type="number" id="FT"></label>
+            </td> 
+        </tr>
+        <tr>
+            <td>
+                <label> <input type="button" id="subFT" value="Xác nhận" onclick="footToMeter()"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="result1"> Result: </label>
+            </td>
+        </tr>
+    </table>
+    <hr width="200" align="left">
+
+    <table style="width: 300; height: 100;">
+        <tr>Chuyển đổi Meter sang Feet</tr> 
+        <tr></tr>
+        <tr> 
+            <td> 
+                <label> <input type="number" id="MT"></label>
+            </td> 
+        </tr>
+        <tr>
+            <td>
+                <label> <input type="button" id="subMT" value="Xác nhận" onclick="meterToFoot()"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label id="result2"> Result: </label>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function footToMeter(){
+        let meter = document.getElementById('FT').value
+        let foot = 3.279 * meter
+        // document.getElementById('result1').innerText= "Giá trị chuyển đổi là: " + foot + " feet"
+        alert("Giá trị chuyển đổi là: " + foot + " feet")
+    }
+
+    function meterToFoot(){
+        let foot = document.getElementById('MT').value
+        let meter = 0.305 * foot
+        document.getElementById('result2').innerHTML= "Giá trị chuyển đổi là: " + meter + " meters"
+    }
+</script>
+</html>

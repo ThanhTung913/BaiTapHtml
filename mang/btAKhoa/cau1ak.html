@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let size = 4; 
+    let max = 90;
+    let min = 10;
+    let arr=[];
+    let total0=0;
+    let total1=0;
+    let total2=0;
+    let total3=0;
+    let total4=0;
+    let total5=0;
+
+    for (i = 0 ; i < size ; i++  ){
+        arr[i]=[];
+        for (j=0; j < size; j++ ){
+            arr[i][j] = Math.floor(Math.random() * ( max - min + 1) + min);
+        total0+=arr[i][j];
+        }
+    } console.log(arr)
+
+    // for (i = 2;i < size; i++ ){
+    //     arr[i]=[];
+    //     for ( j = 2; j < size ; j++){
+    //        if (  arr[i][j] % 2 == 0 ){
+    //            total1 += arr[i][j];
+    //        }
+    //     }
+    // }
+    console.log(total1)
+    
+    // Tính tổng đường chéo phụ
+    for (i = 0, j= size - 1 ; i < size, j >= 0  ; i++, j--  ){
+        total2 += arr[i][j]; 
+    } console.log(total2) 
+    
+    // tính tổng đường chéo chính
+    // for (let i = 0 ; i < size ; i++){
+    //     total3+=arr[i][i];
+    // } console.log(total3)  cách 1
+
+    for (let i = 0, j= 0 ; i < size, j<size ; i++, j++){
+        total3+=arr[i][j];
+    } console.log(total3)  
+    // cách 2
+
+    // Tính tổng đường biên
+
+    for ( let i=1; i < arr.length -1 ;i++ ){
+        arr[i][j] =[]
+        for ( let j =1; j < arr.length -1 ; j++){
+            total4 += arr[i][j]
+        }
+    } console.log(total4)
+    console.log(total5 = total0 - total4)
+
+
+// Hiển thị ma trận tam giác dưới
+    for (i=0; i< arr.length ; i++){
+        for ( j=0; j < i; j++){
+            document.write(a[i][j])
+        } 
+        document.write('<br>')
+    }
+</script>
+</html>

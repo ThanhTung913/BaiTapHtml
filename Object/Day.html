@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Date{
+            constructor(date, month, year){
+                this.date = date;
+                this.month  = month;
+                this.year = year;
+                }
+                getDate(){
+                return this.date;
+                }
+                getMonth(){
+                return this.month;
+                }
+                getYear(){
+                return this.year;
+                }
+                
+                setDate(date){
+                this.date = date;}
+                setMonth(month){
+                    this.month = month;
+                }
+                setYear(year){
+                    this.year=year;
+                }
+            }   
+            
+
+
+ let DateK = new Date(21,5,1999)
+ DateK.getYear()
+ console.log( DateK.getYear())
+ console.log( DateK.getMonth())
+ console.log(DateK.setDate())
+
+
+    </script>
+</body>
+</html>

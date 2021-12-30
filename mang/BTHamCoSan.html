@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // câu1 : Nối chuỗi
+    let myColor=['Red','Black', 'White','Yellow'];
+    console.log(myColor.toString())
+    // câu 2: thêm giữa các phần tử
+    console.log(myColor.join('+'))
+
+    // câu 3:
+    let string = "DungOcsCHo";
+    let arr=[];
+    arr= string.split("")
+
+    for ( let i = 0; i < arr.length ; i++){
+        if (arr[i]== arr[i].toUpperCase()){
+            arr[i]= arr[i].toLowerCase()
+        }else if (arr[i] == arr[i].toLowerCase()){
+            arr[i] = arr[i].toUpperCase()
+        }
+    } document.write(arr.join(''))
+</script>
+</html>

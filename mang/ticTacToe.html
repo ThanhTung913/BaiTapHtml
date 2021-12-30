@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    
+    </style>
+
+    <div id='caro1'> </div>
+</body>
+<script>
+    let size = 5;
+    let caro=[];
+    let caroTable= " "
+    const x_value= 1;
+    const o_value=10;
+    let isPlayX=true;
+    for (let i = 0; i < size ; i++){
+        caro[i]=[];
+        for(let j = 0; j< size; j++){
+            caro[i][j]= 0;
+        }
+    } 
+
+    caroTable += "<table border=1>"
+        for (let i =0; i<caro.length; i++){
+            caroTable+= "<tr>"
+                for (let j=0; j < caro.length;j++ ){
+                    caroTable+= `<td onclick="play${i},${j}">${caro[i][j] == 0 ? "&nbsp;&nbsp;" : (caro[i][j]==1 ? "X" : "O")} </td>`
+                }
+            caroTable+= "</tr>"  
+        } 
+        caroTable += "</table>"
+        document.getElementById("caro1").innerHTML =caroTable
+
+function play(i, j){
+    if (isPlayX){
+        caro[i][j] = x_value;
+        isPlayX= false
+    } else {
+        caro[i][j] = o_value;
+        isPlayX= true;
+    }
+    CaroTable=" ";
+    caroTable += "<table border=1>"
+        for (let i =0; i<caro.length; i++){
+            caroTable+= "<tr>"
+                for (let j=0; j < caro.length;j++ ){
+                    caroTable+= `<td onclick="play${i},${j}">${caro[i][j] == 0 ? "&nbsp;&nbsp;" : (caro[i][j]==1 ? "X" : "O")} </td>`
+                }
+                caroTable+= "</tr>"  
+            } 
+            caroTable += "</table>"
+            document.getElementById("caro1").innerHTML = caroTable
+    }
+            
+</script>
+</html>
